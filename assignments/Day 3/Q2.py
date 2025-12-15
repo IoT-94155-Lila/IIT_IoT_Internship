@@ -1,0 +1,7 @@
+text=input("enter a string:")
+print("original string:",text)
+print("1st five chaeacters:",text[0:5])
+print("from index 2 to 6:",text[2:7])
+print("from index 3 to end:",text[3:])
+print("start to index 4:",text[:5])
+print("reverse string:",text[::-1])
