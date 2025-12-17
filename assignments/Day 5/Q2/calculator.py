@@ -1,0 +1,52 @@
+def add(a,b):
+    return a+b
+
+def subtract(a, b):
+    return a-b
+
+def multiply(a, b):
+    return a*b
+
+def divide(a, b):
+    return a/b
+    
+#calculator.py
+from calculator import *
+while True:
+    print("---------------------------")
+    a = float(input("Enter first number: "))
+    b = float(input("Enter second number: "))
+
+    print("\n---- Calculator Menu ----")
+    print("1. Addition")
+    print("2. Subtraction")
+    print("3. Multiplication")
+    print("4. Division")
+    print("---------------------------")
+
+    choice = int(input("Enter your choice: "))
+
+    match choice:
+        case 1:
+            print("Result =", add(a,b))
+        case 2:
+            print("Result =", subtract(a, b))
+        case 3:
+            print("Result =",multiply(a, b))
+        case 4:
+             if b == 0:
+              print("Error: Division by zero")
+             else:
+              print("Result =",divide(a, b))
+        case _:
+          print("Invalid choice!")
+    
+
+    
+#main.py
+
+
+
+
+
+
