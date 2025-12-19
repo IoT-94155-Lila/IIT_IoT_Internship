@@ -12,7 +12,7 @@ id=int(input("Enter id: "))
 temperature=int(input("Enter Temperature: "))
 humidity=int(input("Enter Humidity: "))
 
-query=f"INSERT INTO sensor_readings (id,temperature,humidity,timestamp) VALUES({id},{temperature},{humidity},'{datetime.now()}')"
+query=f"INSERT INTO sensor_readings (id,temperature,humidity) VALUES({id},{temperature},{humidity})"
 
 cursor=connection.cursor()
 cursor.execute(query)
